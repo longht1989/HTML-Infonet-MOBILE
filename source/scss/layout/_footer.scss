@@ -1,0 +1,56 @@
+.site-footer {
+    padding: 20px 0;
+    margin-top: 20px;
+    background: #3D3D48;
+
+    .tools {
+        margin-bottom: 20px;
+        border-bottom: 1px solid #77777F;
+        padding-bottom: 10px;
+        text-align: center;
+
+        .logo {
+            height: 30px;
+        }
+
+        img {
+            height: 100%;
+            width: auto;
+        }
+    }
+
+    .content {
+        @include clearfix;
+    }
+
+    .text {
+        font-size: 14px;
+        color: #fff;
+        opacity: 0.9;
+        line-height: 1.5;
+
+        a {
+            color: #fff;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .credit {
+        max-width: 30%;
+        float: right;
+        text-align: center;
+
+        p {
+            color: #fff;
+            opacity: 0.9;
+            font-weight: bold;
+        }
+
+        .img-responsive {
+            display: inline-block;
+        }
+    }
+}
