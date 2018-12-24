@@ -77,6 +77,15 @@
         line-height: 1.4em;
     }
 
+    &__source {
+        background-color: $brand-primary;
+        color: white;
+        padding: 1px 5px;
+        margin-bottom: 2px;
+        display: inline-block;
+        font-size: 12px;
+    }
+
     &__cate {
         margin-right: 4px;
         font-weight: 700;
