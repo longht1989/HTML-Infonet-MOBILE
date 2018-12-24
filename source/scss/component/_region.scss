@@ -83,8 +83,17 @@
     &__content {}
 
     &__footer {
-        text-align: center;
+        text-align: right;
         margin-top: 10px;
+        font-size: 12px;
+        padding-top: 10px;
+        border-top: 1px solid #eee;
+        span {
+            display: inline-block;
+            color: $brand-primary;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
     }
 
     &--border {
