@@ -32,21 +32,10 @@
 
 .breadcrumbs {
     font-family: $font-family-special;
-    margin-bottom: 12px;
-    padding-left: 12px;
+    margin-bottom: 10px;
     position: relative;
-    &::before {
-        display: block;
-        content: '';
-        width: 4px;
-        position: absolute;
-        left: 0;
-        top: 0px;
-        bottom: 2px;
-        background-color: $brand-success;
-    }
     .cate {
-        font-size: 18px;
+        font-size: 14px;
         display: inline-block;
         font-weight: bold;
         a {
@@ -74,7 +63,7 @@
         }
     }
     .subcate {
-        font-size: 18px;
+        font-size: 14px;
         display: inline-block;
     }
 }

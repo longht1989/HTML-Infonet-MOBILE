@@ -23,10 +23,8 @@
     margin-top: 4px;
 }
 
-.box-comment .btn-success {
+.box-comment .btn-primary {
     float: right;
-    border-radius: 3px;
-    background-color: #3B5998;
 }
 
 .box-comment .inner-comment {
@@ -140,8 +138,7 @@
 }
 
 .action-comment-reply button {
-    background: #3B5998;
-    border-radius: 3px;
+    background: $brand-primary;
     color: #fff;
     border: none;
     padding: 7px 15px;

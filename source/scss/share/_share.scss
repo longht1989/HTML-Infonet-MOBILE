@@ -1,21 +1,43 @@
 /* button border  */
 
 .btn {
-    font-size: 14px; // -webkit-border-radius: 0px;
-    // -moz-border-radius: 0px;
-    // -ms-border-radius: 0px;
-    // -o-border-radius: 0px;
-    // border-radius: 0px;
-    @include transition(background-color, 0.2, ease-out);
+    font-size: 14px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    border-radius: 0px;
+    transition: all 0.2s ease;
+    border: none;
+
     .fa {
         margin-right: 5px;
     }
+
     &:active:focus,
     &:focus:active {
         outline: none;
     }
+
     @include haf {
         outline: none;
+    }
+
+    &-primary {
+        border-bottom: 2px solid darken($brand-primary, 10%);
+
+        &:hover {
+            background-color: darken($brand-primary, 5%);
+        }
+
+        &:active:focus,
+        &:focus:active,
+        &:focus,
+        &:active {
+            border-bottom: 0px solid darken($brand-primary, 10%);
+            margin-top: 2px;
+        }
+
     }
 }
 
@@ -24,6 +46,7 @@
     background-color: transparent;
     color: #333;
     @include transition(all, 0.2, linear);
+
     &:hover {
         background-color: $brand-primary;
         color: white;
@@ -37,6 +60,7 @@
     -ms-border-radius: 2px;
     -o-border-radius: 2px;
     border-radius: 2px;
+
     &:focus {
         border-color: darken($brand-primary, 15%);
     }
@@ -48,6 +72,7 @@
     line-height: 1.4em;
     color: #999;
     text-align: center;
+
     [class^="icon"] {
         margin-right: 4px;
         width: 14px;
@@ -63,4 +88,17 @@
 
 .pull-left {
     float: left;
+}
+
+/*lazy load image */
+img.loading {
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    width: 100%;
+    padding-bottom: 56.25%;
+
+    .story--horizontal & {
+        width: 120px;
+        padding-bottom: 75%;
+    }
 }

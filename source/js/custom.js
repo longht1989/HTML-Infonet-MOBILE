@@ -35,16 +35,7 @@ $(function() {
     $(document).scroll(function() {
         $(document).scrollTop() > 0 ? $("#gotop").fadeIn() : $("#gotop").hide()
     });
-    // toggle floating social
-    if ($(".article__summary").length > 0) {
-        $(window).scroll(function() {
-            if ($(window).scrollTop() > $(".article__summary").offset().top) {
-                $('.social-floating').show();
-            } else {
-                $('.social-floating').hide();
-            }
-        });
-    }
     // add class for story has gif image
     $('.story__thumb img[src$=".gif"]').parents('.story').addClass('story--gif');
+    $('.story__thumb img[data-src$=".gif"]').parents('.story').addClass('story--gif');
 });
