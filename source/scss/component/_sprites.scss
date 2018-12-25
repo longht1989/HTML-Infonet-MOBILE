@@ -45,6 +45,13 @@
         height: 9px;
         background-position: -200px 0;
     }
+
+    &-rss-white {
+        width: 9px;
+        height: 9px;
+        background-position: -400px -400px;
+    }
+
     &-menu {
         width: 17px;
         height: 12px;
@@ -89,6 +96,12 @@
         &:hover {
             background-position-y: -300px;
         }
+    }
+
+    &-monitor {
+        width: 14px;
+        height: 13px;
+        background-position: -200px -400px;
     }
 
     &-video {

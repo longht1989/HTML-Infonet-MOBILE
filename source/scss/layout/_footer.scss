@@ -1,13 +1,13 @@
 .site-footer {
-    padding: 20px 0;
+    padding: 15px 0 10px;
     margin-top: 20px;
     background: #3D3D48;
 
     .tools {
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         border-bottom: 1px solid #77777F;
         padding-bottom: 10px;
-        text-align: center;
+        // text-align: center;
 
         .logo {
             height: 30px;
@@ -24,7 +24,7 @@
     }
 
     .text {
-        font-size: 14px;
+        font-size: 13px;
         color: #fff;
         opacity: 0.9;
         line-height: 1.5;
@@ -52,5 +52,32 @@
         .img-responsive {
             display: inline-block;
         }
+    }
+
+    p.extend {
+        font-size: 12px;
+        margin: 10px 0 0;
+        padding-top: 7px;
+        border-top: 1px solid #52525c;
+        text-align: right;
+
+        &>a {
+            opacity: 0.8;
+            transition: all 0.2s ease;
+
+            &:hover {
+                opacity: 1;
+            }
+
+            &+a {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    [class^="sprite-"] {
+        margin-right: 3px;
+        position: relative;
+        top: -1px;
     }
 }
