@@ -16,7 +16,8 @@
     &__title {
         float: left;
 
-        a {
+        a,
+        span {
             color: #FFFFFF;
             background-color: $brand-primary;
             font-size: 14px;
@@ -88,6 +89,7 @@
         font-size: 12px;
         padding-top: 10px;
         border-top: 1px solid #eee;
+
         span {
             display: inline-block;
             color: $brand-primary;
