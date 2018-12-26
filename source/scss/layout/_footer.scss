@@ -1,16 +1,18 @@
 .site-footer {
     padding: 15px 0 10px;
     margin-top: 20px;
-    background: #3D3D48;
+    background: #f0f0f0;
 
     .tools {
         margin-bottom: 15px;
-        border-bottom: 1px solid #77777F;
+        border-bottom: 1px solid #d0d0d0;
         padding-bottom: 10px;
         // text-align: center;
 
         .logo {
-            height: 30px;
+            height: 20px;
+            display: block;
+            text-align: center;
         }
 
         img {
@@ -25,12 +27,12 @@
 
     .text {
         font-size: 13px;
-        color: #fff;
+        color: #555;
         opacity: 0.9;
         line-height: 1.5;
 
         a {
-            color: #fff;
+            color: #555;
 
             &:hover {
                 text-decoration: underline;
@@ -44,7 +46,7 @@
         text-align: center;
 
         p {
-            color: #fff;
+            color: #555;
             opacity: 0.9;
             font-weight: bold;
         }
@@ -54,17 +56,19 @@
         }
     }
 
-    p.extend {
+    .extend {
         font-size: 12px;
+        line-height: 20px;
         margin: 10px 0 0;
         padding-top: 7px;
-        border-top: 1px solid #52525c;
+        border-top: 1px solid #d0d0d0;
         text-align: right;
+        color: #6e6e6e;
 
-        &>a {
-            opacity: 0.8;
+        a {
+            color: #6e6e6e;
             transition: all 0.2s ease;
-
+            display: inline;
             &:hover {
                 opacity: 1;
             }
@@ -72,6 +76,11 @@
             &+a {
                 margin-left: 10px;
             }
+        }
+
+        img {
+            height: 20px;
+            position: relative;top: -3px;
         }
     }
 
