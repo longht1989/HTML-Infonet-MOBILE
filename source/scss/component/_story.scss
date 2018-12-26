@@ -202,6 +202,28 @@
         }
     }
 
+    &--bullet {
+        .story__title {
+            position: relative;
+            padding-left: 12px;
+
+            &::before {
+                content: '';
+                display: block;
+                width: 4px;
+                height: 4px;
+                background: $brand-primary;
+                position: absolute;
+                left: 0;
+                top: 7px;
+            }
+        }
+
+        .story__meta {
+            padding-left: 12px;
+        }
+    }
+
     &--video {
         .story__thumb {
             position: relative;
