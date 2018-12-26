@@ -79,6 +79,8 @@
 
     .mobile-menu {
         font-family: $font-family-special;
+        max-height: calc(100vh - 49px);
+        overflow-y: scroll;
 
         .menu {
             font-size: 0;
