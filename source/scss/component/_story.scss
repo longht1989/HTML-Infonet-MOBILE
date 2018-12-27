@@ -69,6 +69,12 @@
                 }
             }
         }
+
+        [class^="sprite-"] {
+            position: relative;
+            margin-left: 4px;
+            top: -2px;
+        }
     }
 
     &__meta {

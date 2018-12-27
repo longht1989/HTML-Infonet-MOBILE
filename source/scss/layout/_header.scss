@@ -94,26 +94,43 @@
                 line-height: 1.4em;
                 padding: 0 10px;
                 text-transform: uppercase;
+                position: relative;
+
+                [class^="sprite-"] {
+                    top: 2px;
+                    right: 5px;
+                    position: absolute;
+                }
 
                 &+li {
                     margin-top: 12px;
                     padding-top: 16px;
                     border-top: 1px solid #ddd;
+
+                    [class^="sprite-"] {
+                        top: 18px;
+                    }
                 }
 
                 &:nth-child(2) {
                     padding-top: 0;
                     margin-top: 0;
                     border-top: none;
+
+                    [class^="sprite-"] {
+                        top: 2px;
+                    }
                 }
 
                 &>a {
                     display: block;
                     font-weight: bold;
                 }
+
             }
 
             &__sub {
+                display: none;
                 text-transform: none;
                 font-weight: normal;
                 margin-top: 4px;

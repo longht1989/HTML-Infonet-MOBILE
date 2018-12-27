@@ -38,4 +38,8 @@ $(function() {
     // add class for story has gif image
     $('.story__thumb img[src$=".gif"]').parents('.story').addClass('story--gif');
     $('.story__thumb img[data-src$=".gif"]').parents('.story').addClass('story--gif');
+    $(".mobile-menu .menu .sprite-more ").on('click', function() {
+        $(this).toggleClass('is-active');
+        $(this).siblings(".menu__sub").slideToggle('fast');
+    })
 });
