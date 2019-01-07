@@ -396,18 +396,10 @@
         }
     }
 
-    &.sponsor {
+    &--sponsor {
         .story__meta {
-            &::after {
-                content: ' - Tin tài trợ';
-                display: inline-block;
-                font-size: 0.8em;
-                line-height: 1.2em;
-                border-radius: 2px;
-                vertical-align: middle;
-                color: #555;
-                font-weight: normal;
-            }
+            color: $brand-primary;
+            opacity: 0.8;
         }
     }
 

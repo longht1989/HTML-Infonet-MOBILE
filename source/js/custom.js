@@ -25,7 +25,7 @@ $(function() {
     // affix navigator
     $('.site-header__content').affix({
         offset: {
-            top: $(".site-header__content").offset().top
+            top: $(".site-header__content").outerHeight()
         }
     })
     // go top 
